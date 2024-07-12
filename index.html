@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="scripts/chamar.js"></script>
+
+</head>
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-border-right nav" id="mySidebar">
+        <button onclick="w3_close()" class="w3-button w3-green w3-xlarge botaoside" style="position: absolute; left: 92%;"><</button>
+        <p style="font-size: 30px; margin: 20px;">Um breve guia para te auxiliar e saciar algumas dúvidas</p>
+        <a href="https://meutudo.com.br/blog/como-estornar-um-pix/" class="w3-bar-item w3-button">Efetuei o pagamento via pix, e agora?</a>
+        <a href="#" class="w3-bar-item w3-button" >Link 2</a>
+        <a href="#" class="w3-bar-item w3-button" >Link 3</a>
+    </div>
+
+    <button class="w3-button w3-green w3-xlarge botaoside" onclick="w3_open()">></button>
+
+    <h1 class="bebas-neue-regular w3-animate-zoom" style="font-size: 60px;">Verifique aqui se esta prestes a cair em um golpe!</h1>
+
+    <div class="centralizar">
+        <input class="receber w3-animate-zoom" id="valor" type="text" placeholder="cole o link aq">
+    </div>
+
+    <div class="centralizar w3-animate-zoom">
+         <button onclick="chamar()" class="botao">enviar</button>
+    </div>
+
+</body>
+</html>
