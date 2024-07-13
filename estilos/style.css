@@ -206,10 +206,11 @@ p {
     }
 
     .nav {
-        display:none; 
-        width: 40%; 
+        width: 100%;
+        box-sizing: border-box;
         color: white; 
         background-image: linear-gradient(10deg, #292b29, #262726);
+        display: block; /* Temporariamente define como block para depuração */
     }
     .botaosideAbre{
         top: 60%;
