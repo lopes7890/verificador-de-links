@@ -8,51 +8,6 @@ body {
     color: white;
 }
 
-@media (max-width: 700px) {
-    h1 {
-        font-size: 50px;
-    }
-    .centralizar {
-        display: flex; 
-        justify-content: center; 
-        align-items: center;
-        width: 100%;
-    }
-    .receber {
-        width: 100%;
-        border: none;
-        border-radius: 30px;
-        width: 300px;
-        height: 50px;
-        text-align: center;
-    }
-    .link {
-        position: relative;
-        position: absolute;
-        top: 1%;
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        text-align: center; 
-        color: floralwhite;
-        margin-top: 40px;
-        text-decoration: none;
-        padding: 0px 50px 10px 0;
-        font-size: 30px;
-    }
-
-    .celular {
-        margin-top: 90px;
-    }
-
-    .nav {
-        display:none; 
-        width: 100%; 
-        color: white; 
-        background-color: rgb(31, 28, 28);
-    }
-    
-}
-
 .nav {
     display:none; 
     width: 40%; 
@@ -60,11 +15,19 @@ body {
     background-color: rgb(31, 28, 28);
 }
 
-.botaoside {
+.botaosideAbre{
     display: flex;
     justify-content: left;
     position: absolute;
     top: 50%;
+}
+
+.botaosideFecha{
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    top: 50%;
+    left: 92%;
 }
 
 .virus {
@@ -198,5 +161,54 @@ p {
 @keyframes bounce {
     to {
         transform: translateY(50px);
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 50px;
+        padding: 10px;
+    }
+    .receber {
+        width: 100%;
+        border: none;
+        border-radius: 30px;
+        width: 300px;
+        height: 50px;
+        text-align: center;
+    }
+    .link {
+        position: relative;
+        position: absolute;
+        top: 1%;
+        left: 55%; 
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: floralwhite;
+        margin-top: 40px;
+        text-decoration: none;
+        padding: 0px 50px 10px 0;
+        font-size: 30px;
+    }
+
+    .celular {
+        margin-top: 90px;
+    }
+
+    .nav {
+        display:none; 
+        width: 100%; 
+        color: white; 
+        background-color: rgb(31, 28, 28);
+    }
+    .botaosideAbre{
+        top: 60%;
+    }
+    .botaosideFecha{
+        top: 60%;
+        left: 90%;
+    }
+    h2 + h2 {
+        margin-left: 50px;
     }
 }

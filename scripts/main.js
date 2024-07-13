@@ -17,7 +17,7 @@ function exibirLink(url){
 
   const a = document.createElement("a");
   const h2 = document.createElement("h2");
-  h2.classList.add("bebas-neue-regular", "w3-center", "link");
+  h2.classList.add("bebas-neue-regular", "link");
 
   a.appendChild(h2)
 
