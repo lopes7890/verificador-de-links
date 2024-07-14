@@ -1,7 +1,7 @@
 import { updateDOM } from "./manipularDOM.js";
 
 export async function idadeDoSite(value){
-    const apiKey = "at_87eFkGPMRHBBRxlj88ip0pt88LiLR";
+    const apiKey = config.idade;
     const url = `https://www.whoisxmlapi.com/whoisserver/WhoisService?apiKey=${apiKey}&domainName=${value}&outputFormat=JSON`;
   
     return fetch(url)

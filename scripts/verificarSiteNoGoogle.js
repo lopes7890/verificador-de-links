@@ -1,7 +1,7 @@
 import { updateDOM } from "./manipularDOM.js";
 
 export async function verificaSiteNoGoogle(siteUrl) {
-    const apiKey = "AIzaSyDDjWhmONdQnz2QtmotMpwSsvsdKCVkT6g";
+    const apiKey = config.google;
     const cx = '15763c71d10744c08';
     const query = `site:${siteUrl}`;
     const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${cx}&q=${query}`;
