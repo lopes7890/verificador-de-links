@@ -4,6 +4,8 @@ import { idadeDoSite} from "./idadeDoSite.js";
 import { verificaSiteNoGoogle } from "./verificarSiteNoGoogle.js";
 import { showLoading} from "./carrega.js";
 import { hideLoading } from "./carrega.js";
+import { reclameAqui } from "./reclameaqui.js";
+
 
 function isValidoURL(url){
   try{
@@ -47,6 +49,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         exibirLink(valor)
         vazio.innerText = " ";
         showLoading();
+        document.getElementById("botao").style.visibility = "hidden"
         document.getElementById("botao").disabled = true
 
         try {
@@ -54,12 +57,13 @@ document.addEventListener("DOMContentLoaded", async function() {
                 postApiVerificador(valor),
                 idadeDoSite(valor),
                 verificaSiteNoGoogle(valor),
-                certificadoSSL(valor)
+                certificadoSSL(valor),
             ]);
         } catch (error) {
             console.error('Erro ao chamar APIs:', error);
         } finally {
             hideLoading();
+            reclameAqui(valor)
         }
     }
 });

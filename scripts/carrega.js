@@ -15,6 +15,7 @@ export function showLoading(){
   }
   
 export function hideLoading(){
+    document.getElementById("botao").style.visibility = "visible"
     document.getElementById("botao").disabled = false
     const loadings = document.getElementsByClassName("loading");
     if(loadings.length){
