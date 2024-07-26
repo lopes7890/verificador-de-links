@@ -11,7 +11,8 @@ export function reclameAqui(url){
     a.href = 'https://www.reclameaqui.com.br/busca/?q=' + url
   
     h2Titulo.innerText = 'Veja o site no ReclameAqui:'
-  
+
+
     let texto = a.href
     if(texto.length >= 40){
       h2.innerText = texto.slice(0, 40) + '...'
