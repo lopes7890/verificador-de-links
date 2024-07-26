@@ -1,7 +1,7 @@
 async function chamar(){
   let valor = document.getElementById("valor").value
   localStorage.setItem('valor', valor)
-  window.location.href = 'https://lopes7890.github.io/tcc-etec-ds/resultado.html'
+  window.location.href = 'resultado.html'
 }
 
 function w3_open() {
