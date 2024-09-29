@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async function() {
                 postApiVerificador(valor),
                 idadeDoSite(valor),
                 verificaSiteNoGoogle(valor),
-                certificadoSSL(valor),
+                certificadoSSL(valor)
             ]);
         } catch (error) {
             console.error('Erro ao chamar APIs:', error);
