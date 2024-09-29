@@ -5,7 +5,7 @@ export async function postApiVerificador(value){
     method: 'POST',
     headers: {
       accept: 'application/json',
-      'x-apikey': config.virusTotal,
+      'x-apikey': "8def2e8351060e78aa516cf5938280ff4a01ce1739195ec64ee138bf00199d31",
       'content-type': 'application/x-www-form-urlencoded'
     },
     body: new URLSearchParams({url: value})
